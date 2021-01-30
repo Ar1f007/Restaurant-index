@@ -91,14 +91,14 @@ class RestaurantController extends Controller
     }
 
     public function search(Request $request){
-        $details = $request->input(('isSearched'));
+            $details = $request->input(('isSearched'));
         $result = Restaurant::where('name', 'LIKE', '%'.$details.'%')->get();
         if(count($result) > 0){
             return view('searchResult')->withDetails($result)->withQuery($details);
         }
         else{
             return view('searchResult')->withMessage('No details found. Try to search again!');
-        }
+        }        
     }
     public function show($id){
         $data = Restaurant::find($id);

@@ -2,9 +2,6 @@
 @section('content')
 <div class="container">
     @if (isset($details))
-    {{-- <p>
-        The search result for your query <b>{{$details}}</b> are:
-    </p> --}}
 
     <h4 style="margin: 10px 0;">Search Results :</h4>
     <table class="table table-striped">
@@ -21,9 +18,8 @@
             @endforeach
         </tbody>
     </table>
+    @else
+    <h4 style="margin: 80px 0; text-align: center;">Sorry! Nothing found.</h4>
     @endif
 </div>
-    
-
-    
 @endsection

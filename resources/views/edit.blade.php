@@ -21,7 +21,7 @@
             <label>Address</label>
             <input type="text" class="form-control"  name= "address" value="{{$data->address}}" placeholder="Enter address">
          </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Update</button>
     </form>
 
 </div>

@@ -76,12 +76,5 @@
     <div class="container">
         @yield('content')
     </div>
-      {{-- <footer style="margin-top: 78.2vh;" class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-          © 2021 Copyright: 
-          <a class="text-dark" href="http://laravel.test/">Resto</a>
-        </div>
-      </footer> --}}
 </body>
 </html>
