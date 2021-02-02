@@ -17,6 +17,8 @@ class RestaurantController extends Controller
     }
     public function list(){
         $data = Restaurant::Paginate(5);
+        // $data = Restaurant::all()->sortByDesc('created_at');
+        // $data = Restaurant::orderBy('created_at', 'desc')->paginate(5);
         return view('list', ['data'=>$data]);
     }
     public function add(Request $req){
@@ -92,7 +94,11 @@ class RestaurantController extends Controller
 
     public function search(Request $request){
             $details = $request->input(('isSearched'));
-        $result = Restaurant::where('name', 'LIKE', '%'.$details.'%')->get();
+        // $result = Restaurant::where('name', 'LIKE', '%'.$details.'%')->get();
+        $result = Restaurant::where('address', 'Like', '%'.$details.'%')
+        ->orWhere('name', '%'.$details.'%')
+        ->orWhere('email','like','%'.$details.'%' )
+        ->get();
         if(count($result) > 0){
             return view('searchResult')->withDetails($result)->withQuery($details);
         }

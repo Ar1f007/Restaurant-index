@@ -14,6 +14,7 @@
             @foreach($details as $result)
             <tr>
                 <td><a href="/showDetails/{{$result->id}}">{{$result->name}}</a></td>
+                {{-- <td><a href="/showDetails/{{$result->id}}">{{$result->address}}</a></td> --}}
             </tr>
             @endforeach
         </tbody>
