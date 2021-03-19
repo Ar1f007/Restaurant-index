@@ -6,12 +6,10 @@
 
 A platform which assists content creators produce content in an easily consumable format. Our CMS will be able to create new posts, modify existing posts, remove posts that we do not require any longer, and furthermore permit users to make comments to posts which will be updated in real-time using Disqus. We will also be able to add featured images to posts to give them some visual appeal.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
--   [Simple, fast routing engine](https://laravel.com/docs/routing).
--   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   [Scaffolding a full authentication system using Laravel Breeze].
+-   [Authenticated user can create content, update it, delete it].
 -   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
 -   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
 -   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
